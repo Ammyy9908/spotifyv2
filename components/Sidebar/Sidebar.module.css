@@ -1,0 +1,9 @@
+.playlist__list {
+  max-height: 415px;
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  margin: 12px auto;
+}

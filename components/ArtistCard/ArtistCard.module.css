@@ -1,0 +1,30 @@
+.artist_card:hover .artist_play_btn {
+  transform: translate(-50%, -50%) scale(1);
+}
+.artist_card {
+  overflow: hidden;
+}
+
+.card_ripple {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  border-radius: 50%;
+  transform-origin: 0 right;
+  transform: scale(0);
+}
+.artist_card:hover .card_ripple {
+  transform: scale(100);
+}
+.artist_play_btn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+.artist_card_footer {
+  z-index: 3;
+  position: relative;
+}

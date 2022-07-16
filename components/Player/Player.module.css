@@ -1,0 +1,104 @@
+.player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.track_absolute_cover {
+  position: absolute;
+  top: -115px;
+  left: 0;
+  opacity: 0;
+}
+.cover_big {
+  opacity: 1;
+}
+.cover_small_disabled {
+  position: absolute;
+  left: -100px;
+}
+
+.volume_slider {
+  -webkit-appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  outline: none;
+  z-index: 2;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+}
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(109, 104, 104);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+}
+.custom_slider:hover .volume_slider::-webkit-slider-thumb {
+  opacity: 1;
+}
+
+.custom_slider {
+  width: 119px;
+  position: relative;
+}
+.slider_bar {
+  position: absolute;
+  width: 100%;
+  top: 12px;
+  left: 0;
+  height: 5px;
+  background-color: #ccc;
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.volume_fill {
+  height: 100%;
+  display: block;
+  transition: none;
+  background-color: rgb(13, 233, 53);
+}
+
+.device_container {
+  top: -415px;
+  min-width: 275px;
+  left: -130px;
+  z-index: 9;
+  transform: scale(0);
+  transform-origin: bottom center;
+}
+.device_container_enable {
+  transform: scale(1);
+}
+.device_container::after {
+  width: 22px;
+  height: 22px;
+  background-color: inherit;
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.device_icon {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.device_list {
+  max-height: 170px;
+  overflow-y: scroll;
+}
+.device_list::-webkit-scrollbar {
+  width: 0;
+}
+.device_item {
+  height: 100px;
+}

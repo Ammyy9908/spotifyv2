@@ -1,0 +1,49 @@
+.main {
+  background-color: #121212;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.main__content {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+}
+
+.container {
+  width: 98%;
+  margin: 32px auto;
+}
+.home_gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background-image: url("/img/album3.png"); */
+  width: 100%;
+  height: 415px;
+  background-size: cover;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.home_gradient::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  content: "";
+  backdrop-filter: blur(30px);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.home_shortcuts {
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  grid-gap: 18px;
+  margin-top: 32px;
+}

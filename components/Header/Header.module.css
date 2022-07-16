@@ -1,0 +1,48 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(10px);
+  height: 65px;
+}
+
+.header__searchbar {
+  width: 468px;
+  height: 52px;
+}
+
+.search__icon {
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+.offline_status_btn:focus .offline_status_info {
+  transform: scale(1);
+}
+
+.offline_status_info {
+  position: absolute;
+  width: 302px;
+  padding: 12px 6px;
+  background-color: inherit;
+  top: 38px;
+  left: -275px;
+  transform-origin: top right;
+  transform: scale(0);
+}
+/* 
+.offline_status_info::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: inherit;
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  transform: rotate(45deg);
+} */
+
+.header_user:focus .user_dropdown {
+  display: block;
+}

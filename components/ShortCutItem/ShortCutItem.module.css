@@ -1,0 +1,26 @@
+.shortcut_item_thumb {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  width: 82px;
+  height: 82px;
+  background-color: #000;
+}
+.shortcut_item {
+  position: relative;
+  overflow: hidden;
+}
+
+.shortcut_item:hover {
+  background-color: rgba(35, 35, 35, 0.471);
+}
+.shortcut_item:hover .shortcut_play_icon {
+  top: 50%;
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.shortcut_play_icon {
+  right: 22px;
+  top: -10px;
+  opacity: 0;
+}
